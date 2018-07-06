@@ -19,7 +19,6 @@ npm start
 ```
 
 
-
 **NB: If you need support for IE11 you can replace lit-html with another template engine like pug.**
 
 Keep calm and code!
