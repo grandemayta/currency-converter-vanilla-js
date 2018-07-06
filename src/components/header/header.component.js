@@ -2,13 +2,13 @@ import { html, render } from 'lit-html';
 
 export default class Header {
   constructor() {
-    this.title = 'Header';
+    this.title = 'Exchange Converter';
   }
 
   template() {
     return html`
             <header>
-                <h1>${this.title}</h1>
+                <h3 class="text-center">${this.title}</h3>
             </header>
         `;
   }
