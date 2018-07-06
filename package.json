@@ -32,8 +32,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lit-html": "^0.10.0",
-    "navigo": "^7.1.2",
-    "siema": "^1.5.1"
+    "lit-html": "^0.10.0"
   }
 }
