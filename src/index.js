@@ -1,12 +1,9 @@
 import Router from './core/routes';
-import { Home, Contacts } from './features';
+import { Home } from './features';
 
 const routes = {
   '/': () => {
     new Home().load();
-  },
-  '/contacts': () => {
-    new Contacts().load();
   }
 };
 
