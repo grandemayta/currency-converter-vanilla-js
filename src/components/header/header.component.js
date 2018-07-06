@@ -1,16 +1,16 @@
 import { html, render } from 'lit-html';
 
 export default class Header {
-  constructor() {
-    this.title = 'Exchange Converter';
+  constructor(title) {
+    this.title = title;
   }
 
   template() {
     return html`
-            <header>
-                <h3 class="text-center">${this.title}</h3>
-            </header>
-        `;
+      <header>
+          <h3 class="pt-4 pb-4 text-center">${this.title}</h3>
+      </header>
+    `;
   }
 
   load() {

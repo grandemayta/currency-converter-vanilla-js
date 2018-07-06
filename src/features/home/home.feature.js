@@ -3,21 +3,19 @@ import { Header, Exchange } from '../../components';
 
 export default class Home {
   constructor() {
-    this.title = 'VanillaJS';
+    this.title = 'Exchange Converter';
   }
 
   template() {
     return html`
-            <div>
-              <app-header></app-header>
-              <app-exchange></app-exchange>
-            </div>
+            <app-header></app-header>
+            <app-exchange></app-exchange>
         `;
   }
 
   load() {
     render(this.template(), document.querySelector('#root'));
-    new Header().load();
+    new Header(this.title).load();
     new Exchange().load();
   }
 }
