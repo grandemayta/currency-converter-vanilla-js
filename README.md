@@ -2,6 +2,7 @@
 
 Currency converter is a web application built around vanilla JS and lit-html as a template engine.
 Current version support Latest Major Browsers (Chrome, Safari, Firefox, Edge and Opera).
+
 I used Forex Exchange rates API to calculate the currencies.
 
 <p align="center">
