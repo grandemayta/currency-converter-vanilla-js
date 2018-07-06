@@ -8,6 +8,16 @@ I used Forex Exchange rates API to get the last rates.
 <img src="https://user-images.githubusercontent.com/6887120/42403434-75dfcdfe-8181-11e8-9ece-6fa162a0f808.png" width=200 />
 </p>
 
+To launch the application type the following commands:
+
+```
+npm i
+```
+
+```
+npm start
+```
+
 
 
 **NB: If you need support for IE11 you can replace lit-html with another template engine like pug.**
