@@ -32,10 +32,6 @@ export default class Exchange {
     });
   }
 
-  sum() {
-    return 2;
-  }
-
   onCurrencyFrom() {
     this.slcCurrencyFrom.addEventListener('change', $event => {
       let currencyFrom = $event.target.value;

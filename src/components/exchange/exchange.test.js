@@ -1,5 +1,4 @@
 import { Selector as selector } from 'testcafe';
-import Exchange from './exchange.component';
 
 /* eslint-disable */
 fixture`Exchange Component`.page`http://localhost:3002/`;
@@ -9,7 +8,6 @@ let btnCalculate = selector('#btn-calculate');
 let iptAmount = selector('#ipt-amount');
 let slcCurrencyFrom = selector('#slc-currency-from');
 let slcCurrencyTo = selector('#slc-currency-to');
-let exchange = new Exchange();
 
 test('calculate button should be disabled', async t => {
   await t.expect(btnCalculate.withAttribute('disabled').exists).ok();
