@@ -5,11 +5,11 @@ export default class Exchange {
   constructor() {
     this.url = 'https://exchangeratesapi.io/api/latest';
     this.currencies = ['EUR', 'USD', 'CHF', 'ZAR', 'GBP'];
-    this.slcCurrencyFrom = null;
-    this.slcCurrencyTo = null;
-    this.iptAmount = null;
-    this.btnCalculate = null;
-    this.txtResult = null;
+    this.slcCurrencyFrom = document.querySelector('#slc-currency-from');
+    this.slcCurrencyTo = document.querySelector('#slc-currency-to');
+    this.iptAmount = document.querySelector('#ipt-amount');
+    this.btnCalculate = document.querySelector('#btn-calculate');
+    this.txtResult = document.querySelector('#txt-result');
   }
 
   onInit() {
@@ -30,6 +30,10 @@ export default class Exchange {
       }
       this.btnCalculate.removeAttribute('disabled', false);
     });
+  }
+
+  sum() {
+    return 2;
   }
 
   onCurrencyFrom() {
@@ -102,7 +106,7 @@ export default class Exchange {
         </div>
         <div class="row">
           <div class="col-sm d-flex justify-content-center">
-            <button id="btn-calculate" class="btn btn-raised btn-primary mt-4" disabled>Calulate</button>
+            <button id="btn-calculate" class="btn btn-raised btn-primary mt-4" disabled="true">Calculate</button>
           </div>
         </div>
         <div class="row">

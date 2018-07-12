@@ -9,7 +9,8 @@
     "pretest": "eslint . --fix",
     "start": "webpack-dev-server --config webpack.dev.js",
     "dev": "NODE_ENV=dev webpack --config webpack.dev.js",
-    "prod": "NODE_ENV=prod webpack --config webpack.prod.js"
+    "prod": "NODE_ENV=prod webpack --config webpack.prod.js",
+    "test": "testcafe chrome ./src/components/exchange/exchange.test.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -22,9 +23,11 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-xo": "^0.23.0",
     "eslint-plugin-prettier": "^2.6.1",
+    "eslint-plugin-testcafe": "^0.2.1",
     "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
     "prettier": "^1.13.7",
+    "testcafe": "^0.20.4",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.5",

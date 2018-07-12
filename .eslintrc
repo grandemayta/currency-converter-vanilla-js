@@ -1,5 +1,5 @@
 {
-    "extends": ["xo", "prettier"],
+    "extends": ["xo", "prettier", "plugin:testcafe/recommended"],
     "env": {
       "browser": true,
       "es6": true
@@ -15,6 +15,7 @@
     },
     "parser": "babel-eslint",
     "plugins": [
-      "prettier"
+      "prettier",
+      "testcafe"
     ]
 }
